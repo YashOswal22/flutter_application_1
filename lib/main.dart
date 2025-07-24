@@ -7,20 +7,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple, useMaterial3: false),
+      theme: ThemeData(primarySwatch: Colors.deepPurple, useMaterial3: true),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
       initialRoute: "/home",
       routes: {
         "/": (context) => LoginPage(),
-        "/home": (context) => HomePage(),
+        "/home": (context) => const HomePage(),
         "/login": (context) => LoginPage(),
       },
     );
