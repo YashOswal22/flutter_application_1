@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "flutter_application_1 (Flutter Pixel 4 API 30)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "emulator-5554" // Change this to match your emulator/device ID if needed
+    }
+  ]
+}
